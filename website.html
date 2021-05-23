@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Test website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="banner">
+         <div class="banner-text">
+             <h1>Test Website</h1>
+             <p>just a normal website</p>
+             <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More  </a>
+            </div>  
+         </div> 
+         
+
+        </section>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Meet us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menubtn">
+            <img src="Barber_shop_img/Barber_Shop_img/menu.png" id="menu">
+        </div>
+
+
+        <!---Features-->
+
+        <section id="Feature">
+            <div class="title-text">
+                <p>This is my first ever website that i am making</p>
+                <h1>Features</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Lorem Ipsum</h1>
+                <div class="features-img">
+                    <img src="images/download (1).jpg">
+                </div>    
+                </div>
+            </div>
+        </section>
+
+
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            sidenav.style.right = "-250px";
+            
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "images/close.png";
+                
+        }
+        else{
+            sidenav.style.right = "-250px"
+            menu.src = "images/menu.png";
+        }
+        }        
+        </script>
+
+        
+
+    
+    </body>
+</html>
